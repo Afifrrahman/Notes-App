@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes-App Api</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <h1>Aplikasi Catatan</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-buttons">
+            <button class="form-toggler">Tambah Catatan</button>
+            <select name="notes-type-selector" id="notes-type-selector">
+                <option value="non-archived">Tidak Archive</option>
+                <option value="archived">Archive</option>
+            </select>
+        </div><br>
+        <note-form></note-form>
+        <note-list type="non-archived"></note-list>
+
+         <!-- <div class="confirm-container">
+        <div class="confirm-dialog">
+          <h1 class="confirm-message">Apakah kamu yakin</h1>
+          <div class="confirm-buttons-container">
+            <button class="confirm-yes">Yes</button>
+            <button class="confirm-no">No</button>
+          </div>
+        </div>
+      </div> -->
+
+      <confirm-dialog></confirm-dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aplikasi Catatan. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4d69af1ea6.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
